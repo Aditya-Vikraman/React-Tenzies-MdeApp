@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  background-color: rgb(11, 36, 52);
+  font-family: arial;
+}
+
+main {
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-container{
+  padding-top: 30px;
+}
+
+.text-container h1, p {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.die-container {
+  display : grid;
+  grid-template-columns: repeat(5, 50px);
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+.die {
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  /* background-color: white; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.die h2 {
+  font-size: 30px;
+}
+
+.roll-button {
+  background-color: rgb(80, 53, 255);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 30px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.roll-button:active {
+  /* opacity: 0.7; */
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
